@@ -1,0 +1,72 @@
+$brand: #00985f;
+$brandHover: #007549;
+$textMain: #010810;
+$textSecondary: #636c78;
+$gray600: #9296a0;
+$gray400: #dde0e6;
+$gray900: #252629;
+$textError: #e0001a;
+$gray200: #f0f2f5;
+$textWarning: #b24b00;
+$white: #ffffff;
+$textActive: #00854d;
+$textInfo: #095bad;
+$green400: #b3e0cd;
+$yellow: #ffb320;
+$error: #f50014;
+$info: #0b73db;
+$warning: #f06400;
+$success: #00985f;
+$lightGreen: #e5fae1;
+$lightWarning: #ffecde;
+$lightInfo: #e2eefb;
+$lightError: #ffebeb;
+$tagNew: #af328a;
+$tagSale: #e72d3b;
+$tagCashback: #5bad50;
+$tagExpress: #2f5cec;
+
+$small:
+    1px 1px 3px rgba(51, 51, 51, 0.03),
+    0 3px 9px rgba(51, 51, 51, 0.08);
+$big: 4px 10px 35px rgba(51, 51, 51, 0.08);
+$bigInversion: 0 -10px 35px rgba(51, 51, 51, 0.08);
+$inner:
+    inset 3px 3px 10px rgba(51, 51, 51, 0.1),
+    inset 0 0 3px rgba(51, 51, 51, 0.1);
+
+$xxxl: 1920;
+$xxl: 1600;
+$xl: 1440;
+$lg: 1280;
+$md: 1024;
+$sm: 768;
+$xs: 568;
+$xxs: 360;
+$xxxs: 320;
+
+@mixin mqMin($breakpoint) {
+    @media (min-width: #{$breakpoint}px) {
+        @content;
+    }
+}
+@mixin mq($breakpoint) {
+    @media (max-width: #{$breakpoint - 1}px) {
+        @content;
+    }
+}
+@function scale($value, $minorBool: false) {
+    $major: 8;
+    $minor: 4;
+    $maxMinorValue: 40;
+    @if ($minorBool) {
+        $value: calc($value * $minor);
+        @if ($value > $maxMinorValue) {
+            @return #{floor(calc($value / $major)) * $major}px;
+        } @else {
+            @return #{$value}px;
+        }
+    } @else {
+        @return #{calc($value * $major)}px;
+    }
+}

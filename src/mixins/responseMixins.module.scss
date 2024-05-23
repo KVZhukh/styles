@@ -1,0 +1,30 @@
+@use 'sass:map';
+@use 'sass:list';
+
+@function get-responsive-property($var, $breakpoints...) {
+    $property: var(--#{$var});
+    @each $breakpoint in $breakpoints {
+        $property: var(--#{$var}-#{$breakpoint}, $property);
+    }
+
+    @return $property;
+}
+
+@function generate-breakpoints($breakpointValue) {
+    $breakpoints: ();
+    $allBreakpoints: (
+        xxl: 1599,
+        xl: 1439,
+        lg: 1279,
+        md: 1023,
+        sm: 767,
+        xs: 567,
+        xxs: 359,
+    );
+    @each $size, $value in $allBreakpoints {
+        @if ($value >= $breakpointValue) {
+            $breakpoints: list.append($breakpoints, $size);
+        }
+    }
+    @return $breakpoints;
+}

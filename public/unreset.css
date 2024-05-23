@@ -1,0 +1,81 @@
+.tinymce-content h1,
+.tinymce-content h2,
+.tinymce-content h3,
+.tinymce-content h4 {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 500;
+}
+
+.tinymce-content b {
+    font-weight: 500;
+}
+
+.tinymce-content strong {
+    font-weight: 700;
+}
+
+.tinymce-content h1 {
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+
+.tinymce-content h2 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.tinymce-content h3 {
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.tinymce-content h4 {
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+}
+
+.tinymce-content p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.tinymce-content ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.tinymce-content ul li { 
+    list-style: disc;
+}
+
+.tinymce-content ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.tinymce-content ol li {
+    list-style: decimal;
+}
+
+.tinymce-content ol li, .tinymce-content ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}

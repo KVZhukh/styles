@@ -1,0 +1,51 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "4778UMCE49.com.mobileup.IleDeBeauteInt",
+                "paths": [
+                    "NOT /spasibo",
+                    "NOT /live",
+                    "NOT /christmas-gifts",
+                    "NOT /novinki/*",
+                    "NOT /company/news",
+                    "NOT /actions/*",
+                    "NOT /news/*",
+                    "NOT /giftcards",
+                    "NOT /actions/2022/12/20/8757",
+                    "NOT /goldday2023192201",
+                    "NOT /finalsalegold012023",
+                    "NOT /vse_nachinaetsya_s_lyubvi",
+                    "NOT /loyalty_program_gold",
+                    "NOT /corporate_gift_cards",
+                    "NOT /darim-3000-bonusov",
+                    "NOT /gold-dni-012024",
+                    "*"
+                ]
+            },
+            {
+                "appID": "63HDA2LUE3.com.IDB.Sephora",
+                "paths": [
+                    "NOT /spasibo",
+                    "NOT /live",
+                    "NOT /christmas-gifts",
+                    "NOT /novinki/*",
+                    "NOT /company/news",
+                    "NOT /actions/*",
+                    "NOT /news/*",
+                    "NOT /giftcards",
+                    "NOT /actions/2022/12/20/8757",
+                    "NOT /goldday2023192201",
+                    "NOT /finalsalegold012023",
+                    "NOT /vse_nachinaetsya_s_lyubvi",
+                    "NOT /loyalty_program_gold",
+                    "NOT /corporate_gift_cards",
+                    "NOT /darim-3000-bonusov",
+                    "NOT /gold-dni-012024",
+                    "*"
+                ]
+            }
+        ]
+    }
+}

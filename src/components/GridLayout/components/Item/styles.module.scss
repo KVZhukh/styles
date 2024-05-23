@@ -1,0 +1,46 @@
+@import '../../../../mixins/responseMixins.module.scss';
+
+@mixin responsive-properties($breakpoint, $breakpoints...) {
+    @media (max-width: #{$breakpoint}px) {
+        grid-column: get-responsive-property('col', $breakpoints...);
+        grid-row: get-responsive-property('row', $breakpoints...);
+        justify-self: get-responsive-property('justify', $breakpoints...);
+        align-self: get-responsive-property('align', $breakpoints...);
+        order: get-responsive-property('order', $breakpoints...);
+    }
+}
+
+.component {
+    grid-column: var(--col);
+    grid-row: var(--row);
+    justify-self: var(--justify);
+    align-self: var(--align);
+    order: var(--order);
+}
+
+.componentXxl {
+    @include responsive-properties(1599, generate-breakpoints(1599)...);
+}
+.componentXl {
+    @include responsive-properties(1439, generate-breakpoints(1439)...);
+}
+
+.componentLg {
+    @include responsive-properties(1279, generate-breakpoints(1279)...);
+}
+
+.componentMd {
+    @include responsive-properties(1023, generate-breakpoints(1023)...);
+}
+
+.componentSm {
+    @include responsive-properties(767, generate-breakpoints(767)...);
+}
+
+.componentXs {
+    @include responsive-properties(567, generate-breakpoints(567)...);
+}
+
+.componentXxs {
+    @include responsive-properties(359, generate-breakpoints(359)...);
+}
